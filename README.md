@@ -568,7 +568,7 @@ Etag 主要为了解决 `Last-Modified` 无法解决的一些问题。
 
             var num = Math.floor(arr.length/2);//找到中间数的索引值，如果是浮点数，则向下取整
 
-            var numValue = arr.splice(num,1);//找到中间数的值
+            var numValue = arr.splice(num,1)[0];//找到中间数的值
             var left = [];
             var right = [];
 
